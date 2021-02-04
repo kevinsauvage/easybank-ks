@@ -40,8 +40,9 @@
 }
 .banner__right > img:nth-child(2) {
   position: absolute;
-  right: -409px;
+  right: -233px;
   top: -136px;
+  width: 634px;
 }
 .mobile__img__banner {
   position: absolute;
