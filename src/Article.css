@@ -12,6 +12,7 @@
 .article__text__container {
   padding: 25px;
   background-color: white;
+  height: 200px;
 }
 .article__text__container > p {
   font-size: 10px;
