@@ -3,7 +3,6 @@
   justify-content: center;
   position: relative;
   height: 656px;
-  overflow: hidden;
 }
 
 .banner > .container {
@@ -37,9 +36,9 @@
 .banner__right::after {
   content: "";
   position: absolute;
-  height: 98%;
-  width: 125%;
-  left: 124px;
+  height: 126%;
+  width: 139%;
+  left: 79px;
   top: 0;
   background-image: url(./assets/images/image-mockups.png);
   background-position: center bottom;
@@ -50,10 +49,10 @@
 .banner__right::before {
   content: "";
   position: absolute;
-  height: 100%;
-  width: 157%;
+  height: 110%;
+  width: 220%;
   background-image: url(./assets/images/bg-intro-desktop.svg);
-  background-position: top left;
+  background-position: bottom;
   background-size: cover;
 }
 
