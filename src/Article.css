@@ -25,6 +25,11 @@
   line-height: 20px;
   color: #2d314d;
   margin: 8px 0;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.article__text__container > h3:hover {
+  color: #30c88f;
 }
 .article__text__container > h4 {
   font-size: 13px;
