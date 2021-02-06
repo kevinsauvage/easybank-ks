@@ -6,6 +6,12 @@ import { HiMenu } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Header = ({ isOpen, setIsOpen }) => {
+  if (isOpen) {
+    document.querySelector("body").style.overflow = "hidden";
+  } else {
+    document.querySelector("body").style.overflow = "";
+  }
+
   return (
     <header>
       <div className="container">

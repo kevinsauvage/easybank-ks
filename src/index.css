@@ -20,7 +20,11 @@ code {
 .container {
   display: flex;
   justify-content: space-between;
-  max-width: 1110px;
-  width: 100%;
+  width: 1110px;
   height: 100%;
+}
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 100%;
+  }
 }
