@@ -5,11 +5,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Public Sans",
-    sans-serif;
-}
 * {
   font-family: "Public Sans", sans-serif;
   list-style: none;
@@ -23,6 +18,30 @@ code {
   width: 1110px;
   height: 100%;
 }
+
+.flex-jc-c {
+  display: flex;
+  justify-content: center;
+}
+.flex-jc-sb {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-jc-c-ai-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-jc-sb-ai-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-ai-c {
+  display: flex;
+  align-items: center;
+}
+
 @media only screen and (max-width: 375px) {
   .container {
     width: 100%;

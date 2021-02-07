@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const Banner = ({ setIsOpen }) => {
   return (
-    <div className="banner" onClick={() => setIsOpen(false)}>
+    <div className="banner flex-jc-c" onClick={() => setIsOpen(false)}>
       <div className="container">
         <div className="banner__left">
           <h1>Next generation digital banking</h1>

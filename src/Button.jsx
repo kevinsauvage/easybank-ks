@@ -3,7 +3,7 @@ import "./Button.css";
 
 const Button = () => {
   return (
-    <button className="button">
+    <button className="button flex-jc-c-ai-c">
       <p>Request Invite</p>
     </button>
   );

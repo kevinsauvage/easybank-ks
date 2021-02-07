@@ -1,9 +1,6 @@
 header {
   height: 80px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   z-index: 400;
 }
 header > .container {
@@ -18,9 +15,6 @@ nav {
 }
 nav > ul {
   width: 331px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 100%;
 }
 nav > ul > li {
@@ -30,8 +24,6 @@ nav > ul > li {
   letter-spacing: -0.107692px;
   color: #9597a5;
   height: 100%;
-  display: flex;
-  align-items: center;
   transition: all 0.2s ease;
   cursor: pointer;
   border-bottom: 3px solid transparent;

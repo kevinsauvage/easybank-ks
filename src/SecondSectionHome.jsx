@@ -8,7 +8,7 @@ import OpenApiImg from "./assets/images/icon-api.svg";
 
 const SecondSectionHome = () => {
   return (
-    <div className="second__section__home">
+    <div className="second__section__home flex-jc-c">
       <div className="container">
         <div className="second__section__home__text">
           <h2>Why choose Easybank?</h2>
@@ -17,7 +17,7 @@ const SecondSectionHome = () => {
             financial hub. Control your finances like never before.
           </p>
         </div>
-        <div className="second__section__home__cards">
+        <div className="second__section__home__cards flex-jc-sb">
           <Card
             title="Online Banking"
             text="Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."

@@ -13,16 +13,26 @@ const Header = ({ isOpen, setIsOpen }) => {
   }
 
   return (
-    <header>
+    <header className="flex-jc-c-ai-c">
       <div className="container">
         <img src={Logo} alt="" className="logo" />
         <nav className={isOpen ? "isOpen" : undefined}>
-          <ul>
-            <li onClick={() => setIsOpen(false)}>Home</li>
-            <li onClick={() => setIsOpen(false)}>About</li>
-            <li onClick={() => setIsOpen(false)}>Contact</li>
-            <li onClick={() => setIsOpen(false)}>Blog</li>
-            <li onClick={() => setIsOpen(false)}>Careers</li>
+          <ul className="flex-jc-sb-ai-center">
+            <li onClick={() => setIsOpen(false)} className="flex-ai-c">
+              Home
+            </li>
+            <li onClick={() => setIsOpen(false)} className="flex-ai-c">
+              About
+            </li>
+            <li onClick={() => setIsOpen(false)} className="flex-ai-c">
+              Contact
+            </li>
+            <li onClick={() => setIsOpen(false)} className="flex-ai-c">
+              Blog
+            </li>
+            <li onClick={() => setIsOpen(false)} className="flex-ai-c">
+              Careers
+            </li>
           </ul>
         </nav>
         <div className="button__container">

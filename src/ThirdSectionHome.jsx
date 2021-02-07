@@ -8,12 +8,12 @@ import Article from "./Article";
 
 const ThirdSectionHome = () => {
   return (
-    <div className="third__section__home">
+    <div className="third__section__home flex-jc-c">
       <div className="container">
         <div className="third__section__title">
           <h3>Latest Articles</h3>
         </div>
-        <div className="third__section__cards__article">
+        <div className="third__section__cards__article flex-jc-sb">
           <Article
             img={MoneyImg}
             name="By Claire Robinson"
