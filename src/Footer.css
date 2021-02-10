@@ -53,6 +53,7 @@ footer {
   flex-direction: column;
   align-items: flex-end;
   height: 95px;
+  text-align: end;
 }
 
 @media only screen and (max-width: 917px) {
