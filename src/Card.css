@@ -1,10 +1,12 @@
 .card {
-  margin: 15px;
+  max-width: 254px;
 }
-.card > img {
+
+.card>img {
   margin-bottom: 40px;
 }
-.card > h3 {
+
+.card>h3 {
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
@@ -12,29 +14,36 @@
   color: #2d314d;
   margin-bottom: 26px;
 }
-.card > p {
+
+.card>p {
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: -0.25px;
   color: #9597a5;
 }
-@media only screen and (max-width: 375px) {
+
+@media only screen and (max-width: 917px) {
   .card {
+    max-width: 360px;
     margin: 0 0 32px 0;
   }
-  .card > img {
+
+  .card>img {
     margin-bottom: 24px;
   }
-  .card > h3 {
+
+  .card>h3 {
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 16px;
   }
-  .card > p {
+
+  .card>p {
     font-size: 15px;
     line-height: 25px;
   }
+
   .second__section__home__cards {
     margin-top: 56px;
   }

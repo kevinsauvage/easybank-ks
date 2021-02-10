@@ -3,9 +3,11 @@ header {
   width: 100%;
   z-index: 400;
 }
-header > .container {
+
+header>.container {
   align-items: center;
 }
+
 .logo {
   cursor: pointer;
 }
@@ -13,11 +15,13 @@ header > .container {
 nav {
   height: 100%;
 }
-nav > ul {
+
+nav>ul {
   width: 331px;
   height: 100%;
 }
-nav > ul > li {
+
+nav>ul>li {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
@@ -28,31 +32,34 @@ nav > ul > li {
   cursor: pointer;
   border-bottom: 3px solid transparent;
 }
-nav > ul > li:hover {
+
+nav>ul>li:hover {
   color: #2d314d;
   border-bottom: 3px solid #30c88f;
 }
+
 .hamburger__menu {
   display: none;
 }
-@media only screen and (max-width: 375px) {
+
+@media only screen and (max-width: 917px) {
   header {
     padding: 0 24px;
     z-index: 1000;
   }
+
   .button__container {
     display: none;
   }
+
   nav {
     transition: all 0.5s ease-in-out;
     position: absolute;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(
-      180deg,
-      #2d314d 0%,
-      rgba(45, 49, 77, 0.0001) 100%
-    );
+    background: linear-gradient(180deg,
+        #2d314d 0%,
+        rgba(45, 49, 77, 0.0001) 100%);
     z-index: 500;
     top: 80px;
     left: 0;
@@ -62,7 +69,8 @@ nav > ul > li:hover {
     visibility: hidden;
     opacity: 0;
   }
-  nav > ul {
+
+  nav>ul {
     position: absolute;
     left: 50%;
     top: 24px;
@@ -76,15 +84,17 @@ nav > ul > li:hover {
     border-radius: 5px;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     font-size: 18px;
     color: #2d314d;
   }
+
   .isOpen {
     visibility: visible;
     opacity: 1;
     transition: visibility 0.3s linear, opacity 0.3s linear;
   }
+
   .hamburger__menu {
     display: inherit;
   }

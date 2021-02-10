@@ -2,14 +2,17 @@
   position: relative;
   height: 656px;
 }
-.banner > .container {
+
+.banner>.container {
   align-items: center;
 }
+
 .banner__left {
   height: 316px;
   flex: 1;
 }
-.banner__left > h1 {
+
+.banner__left>h1 {
   font-weight: 300;
   font-size: 56px;
   line-height: 64px;
@@ -17,7 +20,8 @@
   color: #2d314d;
   margin-bottom: 24px;
 }
-.banner__left > h2 {
+
+.banner__left>h2 {
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
@@ -26,11 +30,13 @@
   margin-bottom: 36px;
   width: 75%;
 }
+
 .banner__right {
   height: 100%;
   flex: 1;
   position: relative;
 }
+
 .banner__right::after {
   content: "";
   position: absolute;
@@ -44,6 +50,7 @@
   background-repeat: no-repeat;
   z-index: 50;
 }
+
 .banner__right::before {
   content: "";
   position: absolute;
@@ -53,18 +60,23 @@
   background-position: bottom;
   background-size: cover;
 }
-@media only screen and (max-width: 375px) {
+
+@media only screen and (max-width: 917px) {
   .banner {
     height: fit-content;
     padding-bottom: 88px;
+    width: 100%;
   }
-  .banner > .container {
+
+  .banner>.container {
     flex-direction: column-reverse;
   }
-  .banner__left > h1 {
+
+  .banner__left>h1 {
     font-size: 40px;
     line-height: 47px;
   }
+
   .banner__left {
     width: 327px;
     text-align: center;
@@ -73,11 +85,13 @@
     justify-content: center;
     align-items: center;
   }
+
   .banner__right {
-    width: 375px;
+    width: 100%;
     height: 279px;
     margin-bottom: 375px;
   }
+
   .banner__right::after {
     height: 331px;
     width: 366px;
@@ -86,12 +100,21 @@
     transform: translateX(-50%);
     background-position: center bottom;
   }
+
   .banner__right::before {
-    width: 375px;
-    height: 398px;
+    width: 100%;
+    height: 420px;
     right: 0;
     background-image: url(./assets/images/bg-intro-mobile.svg);
     background-position: center bottom;
     background-size: cover;
+  }
+}
+
+@media screen and (min-width: 917px) and (max-width: 1220px) {
+  .banner__right::after {
+    height: 80%;
+    width: 132%;
+    left: 53px;
   }
 }

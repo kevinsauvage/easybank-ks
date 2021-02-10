@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
 body {
   margin: 0;
   font-family: "Public Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 * {
   font-family: "Public Sans", sans-serif;
   list-style: none;
@@ -12,37 +14,51 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
 .container {
   display: flex;
   justify-content: space-between;
-  width: 1110px;
+  max-width: 1110px;
+  width: 100%;
   height: 100%;
 }
+
 .flex-jc-c {
   display: flex;
   justify-content: center;
 }
+
 .flex-jc-sb {
   display: flex;
   justify-content: space-between;
 }
+
 .flex-jc-c-ai-c {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .flex-jc-sb-ai-center {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .flex-ai-c {
   display: flex;
   align-items: center;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 917px) {
   .container {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .container {
+    width: 100%;
+    max-width: 800px;
   }
 }
