@@ -23,9 +23,9 @@
   color: #9597a5;
 }
 
-@media only screen and (max-width: 917px) {
+@media only screen and (max-width: 1220px) {
   .card {
-    max-width: 360px;
+    max-width: 350px;
     margin: 0 0 32px 0;
   }
 
