@@ -28,7 +28,7 @@
   letter-spacing: -0.28125px;
   color: #9597a5;
   margin-bottom: 36px;
-  width: 75%;
+  width: 85%;
 }
 
 .banner__right {
@@ -122,5 +122,16 @@
     width: 135%;
     height: 494px;
     right: -140px;
+  }
+
+  .banner__left>h1 {
+    font-size: 45px;
+    line-height: 47px;
+  }
+
+  .banner__left>h2 {
+    font-size: 14px;
+    line-height: 20px;
+    width: 83%;
   }
 }
