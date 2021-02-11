@@ -7,7 +7,7 @@ import Button from "./Button";
 
 const Footer = () => {
   return (
-    <footer class="flex-jc-c">
+    <footer className="flex-jc-c">
       <div className="container">
         <div className="footer__wrapper flex-jc-sb">
           <div className="footer__left flex-jc-sb">
