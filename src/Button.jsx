@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 
 const Button = () => {
   return (
-    <Fade bottom cascade>
+    <Fade bottom>
       <button className="button flex-jc-c-ai-c">
         <p>Request Invite</p>
       </button>
