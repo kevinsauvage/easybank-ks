@@ -5,18 +5,21 @@ import OnlineBankingImg from "./assets/images/icon-online.svg";
 import BudgetingImg from "./assets/images/icon-budgeting.svg";
 import OnboardingImg from "./assets/images/icon-onboarding.svg";
 import OpenApiImg from "./assets/images/icon-api.svg";
+import Fade from "react-reveal/Fade";
 
 const SecondSectionHome = () => {
   return (
     <div className="second__section__home flex-jc-c">
       <div className="container">
-        <div className="second__section__home__text">
-          <h2>Why choose Easybank?</h2>
-          <p>
-            We leverage Open Banking to turn your bank account into your
-            financial hub. Control your finances like never before.
-          </p>
-        </div>
+        <Fade bottom cascade>
+          <div className="second__section__home__text">
+            <h2>Why choose Easybank?</h2>
+            <p>
+              We leverage Open Banking to turn your bank account into your
+              financial hub. Control your finances like never before.
+            </p>
+          </div>
+        </Fade>
         <div className="second__section__home__cards flex-jc-sb">
           <Card
             title="Online Banking"

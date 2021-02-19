@@ -5,14 +5,17 @@ import RestaurantImg from "./assets/images/image-restaurant.jpg";
 import PlaneImg from "./assets/images/image-plane.jpg";
 import ConfettiImg from "./assets/images//image-confetti.jpg";
 import Article from "./Article";
+import Fade from "react-reveal/Fade";
 
 const ThirdSectionHome = () => {
   return (
     <div className="third__section__home flex-jc-c">
       <div className="container">
-        <div className="third__section__title">
-          <h3>Latest Articles</h3>
-        </div>
+        <Fade bottom cascade>
+          <div className="third__section__title">
+            <h3>Latest Articles</h3>
+          </div>
+        </Fade>
         <div className="third__section__cards__article flex-jc-sb">
           <Article
             img={MoneyImg}

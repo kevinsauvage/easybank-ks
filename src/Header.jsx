@@ -4,6 +4,7 @@ import Logo from "./assets/images/logo.svg";
 import Button from "./Button";
 import { HiMenu } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+import Fade from "react-reveal/Fade";
 
 const Header = ({ isOpen, setIsOpen }) => {
   const menu = useRef(null);
@@ -22,39 +23,41 @@ const Header = ({ isOpen, setIsOpen }) => {
   };
   return (
     <header className="flex-jc-c-ai-c">
-      <div className="container">
-        <img src={Logo} alt="" className="logo" />
-        <nav
-          className={isOpen ? "isOpen" : undefined}
-          onClick={handleClickOutsideMenu}>
-          <ul ref={menu} className="flex-jc-sb-ai-center">
-            <li onClick={() => setIsOpen(false)} className="flex-ai-c">
-              Home
-            </li>
-            <li onClick={() => setIsOpen(false)} className="flex-ai-c">
-              About
-            </li>
-            <li onClick={() => setIsOpen(false)} className="flex-ai-c">
-              Contact
-            </li>
-            <li onClick={() => setIsOpen(false)} className="flex-ai-c">
-              Blog
-            </li>
-            <li onClick={() => setIsOpen(false)} className="flex-ai-c">
-              Careers
-            </li>
-          </ul>
-        </nav>
-        <div className="button__container">
-          <Button />
+      <Fade bottom cascade>
+        <div className="container">
+          <img src={Logo} alt="" className="logo" />
+          <nav
+            className={isOpen ? "isOpen" : undefined}
+            onClick={handleClickOutsideMenu}>
+            <ul ref={menu} className="flex-jc-sb-ai-center">
+              <li onClick={() => setIsOpen(false)} className="flex-ai-c">
+                Home
+              </li>
+              <li onClick={() => setIsOpen(false)} className="flex-ai-c">
+                About
+              </li>
+              <li onClick={() => setIsOpen(false)} className="flex-ai-c">
+                Contact
+              </li>
+              <li onClick={() => setIsOpen(false)} className="flex-ai-c">
+                Blog
+              </li>
+              <li onClick={() => setIsOpen(false)} className="flex-ai-c">
+                Careers
+              </li>
+            </ul>
+          </nav>
+          <div className="button__container">
+            <Button />
+          </div>
+          <div
+            ref={menuHamb}
+            onClick={() => setIsOpen(!isOpen)}
+            className="hamburger__menu">
+            {isOpen ? <AiOutlineClose size={30} /> : <HiMenu size={25} />}
+          </div>
         </div>
-        <div
-          ref={menuHamb}
-          onClick={() => setIsOpen(!isOpen)}
-          className="hamburger__menu">
-          {isOpen ? <AiOutlineClose size={30} /> : <HiMenu size={25} />}
-        </div>
-      </div>
+      </Fade>
     </header>
   );
 };

@@ -18,7 +18,7 @@
 
 .article__text__container {
   border-radius: 0px 0px 5px 5px;
-
+  overflow: hidden;
   padding: 25px;
   background-color: white;
   height: 200px;
